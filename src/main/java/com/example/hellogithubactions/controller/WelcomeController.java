@@ -1,16 +1,16 @@
 package com.example.hellogithubactions.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 @RequestMapping("/test")
 public class WelcomeController {
 
     @GetMapping("/welcome")
     public String welcome() {
-        return "welcome";
+        return "welcome"; // Returnerer en HTML-side (welcome.html)
     }
-
 }
+
